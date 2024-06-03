@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-      <script src="/scripts/game.js"></script>
+      <script src="/scripts/game.js" defer/>
       </head>
       <body>{children}</body>
     </html>
