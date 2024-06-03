@@ -19,14 +19,14 @@ export default function Home() {
       </div>
       <div className="paddingLeft">
         <Intro />
-        <h2>C'est quoi, un castor ?</h2>
+        <h2>C&apos;est quoi, un castor ?</h2>
       </div>
       <Castorclic />
       <Chat />
       <div className="paddingLeft">
         <h2>Une espèce en pleine expansion</h2>
         <Expansion />
-        <h2>Les éléments d'un barrage</h2>
+        <h2>Les éléments d&apos;un barrage</h2>
       </div>
       <Barrages />
       <div className="paddingLeft">

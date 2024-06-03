@@ -4,7 +4,7 @@ import Reintroduction from "./reintroduction";
 export default function Expansion() {
     return (
         <div className="expansion">
-            <p>Au début du XX<sup>e</sup> siècle, le castor est tout proche de la disparition. Sa population en France est estimée à une centaine d&apos;individus. Plusieurs mesures vont permettre sa recolonisation : l&apos;interdiction de sa chasse au niveau local en 1909, son classement en "espèce protégée" en 1968 et de nombreuses réintroductions.</p>
+            <p>Au début du XX<sup>e</sup> siècle, le castor est tout proche de la disparition. Sa population en France est estimée à une centaine d&apos;individus. Plusieurs mesures vont permettre sa recolonisation : l&apos;interdiction de sa chasse au niveau local en 1909, son classement en &quot;espèce protégée&quot; en 1968 et de nombreuses réintroductions.</p>
             <h2>La réintroduction des castors, un succès</h2>
             <Reintroduction />
             <p>Ce graphique permet de constater que 87 % des réintrouctions.</p>

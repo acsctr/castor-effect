@@ -8,7 +8,7 @@ export default function Zoneshumides() {
                 castors peuvent construire des digues de branches. « Ces barrages permettent de recréer des zones
                 humides en augmentant la surface d’expansion de l’eau », explique Paul Hurel, responsable du réseau
                 Castor à l’OFB. Le castor retrouve alors tous les éléments nécessaires à sa survie.</p>
-            <p>Elles offrent en plus des habitats diversifiés pour d’autres d'espèces comme les poissons, les amphibiens, les oiseaux aquatiques et les mammifères, augmentant ainsi la diversité biologique globale : + 33 % de plantes et + 26 % de coléoptères en plus par rapport aux zones humides non créées par les castors, selon une étude de l'Université de Stirling menée sur un cours d’eau en Angleterre.</p>
+            <p>Elles offrent en plus des habitats diversifiés pour d’autres d&apos;espèces comme les poissons, les amphibiens, les oiseaux aquatiques et les mammifères, augmentant ainsi la diversité biologique globale : + 33 % de plantes et + 26 % de coléoptères en plus par rapport aux zones humides non créées par les castors, selon une étude de l&apos;Université de Stirling menée sur un cours d’eau en Angleterre.</p>
             <Image
                 src="/images/boxplot.svg"
                 width={500}
