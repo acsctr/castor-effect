@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./styles/globals.css";
-
 
 export const metadata: Metadata = {
   title: "Le castor, roi du climat",
@@ -16,11 +14,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-      <script src="/scripts/intersection.js"></script>
-      <script src="/scripts/intersection1.js"></script>
-      <script src="/scripts/intersection2.js"></script>
-      <script src="/scripts/intersection3.js"></script>
-        {/* <script src="/scripts/castor.js"></script> */}
+      <script src="/scripts/game.js"></script>
       </head>
       <body>{children}</body>
     </html>

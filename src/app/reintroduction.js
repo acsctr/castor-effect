@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Legend } from 'recharts';
-import { useState } from 'react';
+import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const data = [
   { name: 'Succès', value: 241 },
@@ -25,7 +24,6 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 export default class Reintroduction extends PureComponent {
 
-
   render() {
     return (
       <div className="w-full h-80">
@@ -44,9 +42,6 @@ export default class Reintroduction extends PureComponent {
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>
-            <Legend
-              wrapperStyle={{backgroundColor:'#076351'}}
-            />
           </PieChart>
         </ResponsiveContainer>
       </div>
