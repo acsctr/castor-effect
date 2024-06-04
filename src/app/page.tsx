@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import Barrages from "./barrages";
 import Zoneshumides from "./zoneshumides";
 import Conflits from "./conflits";
@@ -15,7 +16,13 @@ export default function Home() {
     <main>
       <div id="titraille">
         <h1 className="p-5 font-bold text-6xl absolute z-10">Le castor, roi du climat</h1>
-        <img className="absolute z-0" src="/images/image_titre_mobile.png" alt="castor" />
+        <Image
+          src="/images/image_titre_mobile.png"
+          className="absolute z-0"
+          alt="castor"
+          width={390}
+          height={500}
+        />
       </div>
       <div className="paddingLeft">
         <Intro />

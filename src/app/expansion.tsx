@@ -17,17 +17,31 @@ export default function Expansion() {
             />
             <p>Le Système d&apos;information de l&apos;inventaire du patrimoine naturel (SINP) recense les observations de castors à l&apos;échelle nationale. Elles ne permettent pas une estimation précise du nombre de mammifères mais montrent une tendance.</p>
             <h3>Les observations de castors en France de 1958 à 2022</h3>
-           <Image
+            <Image
                 src="/images/observations_evolution.svg"
                 width={390}
                 height={100}
                 alt="Nombre d&apos;observations de castors en France de 1958 à 2022"
             />
             <p>Sur ce graphique, on constate une très forte hausse du nombre d&apos;observations à partir des années 2000. La particularité de la répartition géographique du castor (sud-est, nord-est et Loire et Bretagne) s&apos;explique en grande partie par ses lieux de réintroduction.</p>
-            <img src="/images/carte_departements.svg" alt="Carte départements"/>
-            <img src="/images/cours_deau.png" alt="Cours d&apos;eau"/>
-            <img src="/images/observations_2021.png" alt="Observations 2021"/>
-
+            <Image
+                src="/images/carte_departements.svg"
+                alt="Carte départements"
+                width={390}
+                height={400}                
+            />
+            <Image
+                src="/images/cours_deau.png"
+                alt="Cours d&apos;eau"
+                width={390}
+                height={400}
+            />
+            <Image
+                src="/images/observations_2021.png"
+                alt="Observations 2021"
+                width={390}
+                height={400}
+            />
         </div>
     );
 }
