@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main>
       <div id="titraille">
-        <h1 className="titre">Le castor, roi du climat</h1>
-        <img className="imagetitre" src="/images/image_titre.png" alt="castor" />
+        <h1 className="p-5 font-bold text-6xl absolute z-10">Le castor, roi du climat</h1>
+        <img className="absolute z-0" src="/images/image_titre_mobile.png" alt="castor" />
       </div>
       <div className="paddingLeft">
         <Intro />

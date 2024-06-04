@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
       <script src="/scripts/game.js" defer/>
       </head>
-      <body>{children}</body>
+      <body className="text-white">{children}</body>
     </html>
   );
 }
