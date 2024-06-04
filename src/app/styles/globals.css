@@ -54,3 +54,8 @@ h3 {
 .footer, .chat, .barrages {
   background-color: rgb(7 99 81 / 90%);
 }
+
+.treemap {
+  margin-top: '5px';
+  margin-bottom: '5px';
+}
