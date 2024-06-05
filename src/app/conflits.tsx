@@ -10,7 +10,7 @@ export default function Conflits() {
                 width={500}
                 height={500}
                 alt="Treemap des conflits entre humains et castors"
-                className="treemap"
+                className="my-5"
             />
             <p>Mais des solutions existent pour permettre une cohabitation sereine entre castors et agriculteurs. <strong>Le siphon est la solution privilégiée dans 36 % des cas.</strong> Objectif : réguler l&apos;eau sans déranger l&apos;animal. Ce dispositif doit être silencieux car le bruit de l&apos;eau qui coule provoque un stimulus déclenchant l&apos;acte instinctif de colmater une brèche.</p>
         </div>

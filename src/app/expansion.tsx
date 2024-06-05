@@ -3,7 +3,7 @@ import Reintroduction from "./reintroduction";
 
 export default function Expansion() {
     return (
-        <div className="expansion">
+        <div>
             <p>Au début du XX<sup>e</sup> siècle, le castor est tout proche de la disparition. Sa population en France est estimée à une centaine d&apos;individus. Plusieurs mesures vont permettre sa recolonisation : l&apos;interdiction de sa chasse au niveau local en 1909, son classement en &quot;espèce protégée&quot; en 1968 et de nombreuses réintroductions.</p>
             <h2>La réintroduction des castors, un succès</h2>
             <p>Plusieurs opérations de réintroduction des castors ont été menées en France à partir de 1957. Le nombre de castors réintroduits variait de 3 à 21. La plupart des réintroductions se sont conclues par un succès.</p>
@@ -17,7 +17,7 @@ export default function Expansion() {
                 alt="Réintroduction"
             />
             <p>Le Système d&apos;information de l&apos;inventaire du patrimoine naturel (SINP) recense les observations de castors à l&apos;échelle nationale. Elles ne permettent pas une estimation précise du nombre de mammifères mais montrent une tendance.</p>
-            <h3>Les observations de castors en France de 1958 à 2022</h3>
+            <strong>Les observations de castors en France de 1958 à 2022</strong>
             <Image
                 src="/images/observations_evolution.svg"
                 width={390}
