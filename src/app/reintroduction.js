@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip, Sector } from 'recharts';
 
 const data = [
   { name: 'Succès', value: 241 },
-  { name: 'Échecs', value: 28 },
-  { name: 'Inconnu', value: 7 },
+  { name: 'Échec', value: 28 },
+  { name: 'Résultat inconnu', value: 7 },
 ];
 
 const COLORS = ['#17e2a3', '#9abef4', '#c4a672'];
@@ -22,7 +22,44 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   );
 };
 
+const renderActiveShape = (props) => {
+  const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill } = props;
+
+  return (
+    <g>
+      <Sector
+        cx={cx}
+        cy={cy}
+        innerRadius={innerRadius}
+        outerRadius={outerRadius}
+        startAngle={startAngle}
+        endAngle={endAngle}
+        fill={fill}
+      />
+      <Sector
+        cx={cx}
+        cy={cy}
+        startAngle={startAngle}
+        endAngle={endAngle}
+        innerRadius={outerRadius + 6}
+        outerRadius={outerRadius + 10}
+        fill={fill}
+      />
+    </g>
+  );
+};
+
 export default class Reintroduction extends PureComponent {
+
+  state = {
+    activeIndex: 0,
+  };
+
+  onPieEnter = (_, index) => {
+    this.setState({
+      activeIndex: index,
+    });
+  };
 
   render() {
     return (
@@ -30,6 +67,9 @@ export default class Reintroduction extends PureComponent {
         <ResponsiveContainer width="100%" height="100%">
           <PieChart>
             <Pie
+              activeIndex={this.state.activeIndex}
+              activeShape={renderActiveShape}
+              onMouseEnter={this.onPieEnter}
               data={data}
               cx="50%"
               cy="50%"
@@ -42,6 +82,13 @@ export default class Reintroduction extends PureComponent {
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>
+            <Legend
+              verticalAlign="bottom"
+              layout="horizontal"
+              iconSize="22"
+              iconType="triangle"
+            />
+            <Tooltip />
           </PieChart>
         </ResponsiveContainer>
       </div>

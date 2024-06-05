@@ -6,8 +6,9 @@ export default function Expansion() {
         <div className="expansion">
             <p>Au début du XX<sup>e</sup> siècle, le castor est tout proche de la disparition. Sa population en France est estimée à une centaine d&apos;individus. Plusieurs mesures vont permettre sa recolonisation : l&apos;interdiction de sa chasse au niveau local en 1909, son classement en &quot;espèce protégée&quot; en 1968 et de nombreuses réintroductions.</p>
             <h2>La réintroduction des castors, un succès</h2>
+            <p>Plusieurs opérations de réintroduction des castors ont été menées en France à partir de 1957. Le nombre de castors réintroduits variait de 3 à 21. La plupart des réintroductions se sont conclues par un succès.</p>
             <Reintroduction />
-            <p>Ce graphique permet de constater que 87 % des réintrouctions.</p>
+            <p className="text-xs mt-1 mb-5">Source : Faune sauvage n<sup>o</sup> 297 - 4<sup>e</sup> trimestre 2012</p>
             <p>En 1965, sa population était estimée à 3 000 castors, 5 000 en 1986 et 9 000 en 1997. En un siècle leur nombre a été multiplié par 150 ! Aujourd&apos;hui, il y aurait une population d&apos;au moins 20 000 individus sur plus de 18 000 km de cours d&apos;eau.</p>
             <Image
                 src="/images/reintroduction.png"
@@ -28,7 +29,7 @@ export default function Expansion() {
                 src="/images/carte_departements.svg"
                 alt="Carte départements"
                 width={390}
-                height={400}                
+                height={400}
             />
             <Image
                 src="/images/cours_deau.png"
