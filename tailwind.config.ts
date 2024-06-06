@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config: Config = {
   content: [
@@ -21,6 +22,9 @@ const config: Config = {
           50: "#9abef4",
           500: "#0a0aa0"
         }
+      },
+      backgroundImage: {
+        'river': "url('/images/bg_riviere_2.png')",
       }
     }
   }
