@@ -8,7 +8,7 @@ export default function Game() {
         <div className="game my-5 p-4 rounded-md max-w-lg text-center">
             <h2>Jouer</h2>
             <FontAwesomeIcon icon={faCircleQuestion} size="4x" style={{ color: "white" }} beat
-                id="mark" className="mt-2"></FontAwesomeIcon>
+                id="mark" className="mt-2 hover:cursor-pointer"></FontAwesomeIcon>
             <div id="jeu" hidden>
                 <p className="mt-3">À votre avis, combien de castors restait-il en France dans les années 1930 ?</p>
                 <div className="buttonLine mt-10">

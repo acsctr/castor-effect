@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "IBM Plex Sans", sans-serif;
-  background-image: url("/images/bg_riviere_2.png");
-  background-size: contain;
+@layer base {
+  html {
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  h2 {
+    @apply text-4xl;
+    @apply mt-10;
+    @apply mb-4;
+  }
 }
 
-#titraille {
-  height: 550px;
-}
-
-h1, h2 {
-  font-family: "BioRhyme", serif;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 3%;
-}
-
-.resp-img {
-  position: relative!important;
-  max-width:800px;
+@layer utilities {
+  h1, h2 {
+    font-family: "BioRhyme", serif;
+  }
+  #titraille {
+    height: 550px;
+  }
+  
+  .resp-img {
+    position: relative!important;
+    max-width:800px;
+  }
 }
