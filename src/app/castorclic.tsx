@@ -1,6 +1,6 @@
 export default function Castorclic() {
     return (
-        <div className="castorclic">
+        <div className="bg-green-500/90">
             <iframe
                 src="https://view.genially.com/665989492424b30015efa4e3"
                 width="100%"

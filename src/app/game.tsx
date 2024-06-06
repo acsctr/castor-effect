@@ -12,8 +12,8 @@ export default function Game() {
             <div id="jeu" hidden>
                 <p className="mt-3">À votre avis, combien de castors restait-il en France dans les années 1930 ?</p>
                 <div className="buttonLine mt-10">
-                    <button className="rounded-md" id="7">7</button>
-                    <button className="rounded-md" id="27">27</button>
+                    <button className="rounded-md bg-white hover:bg-yellow-50 text-black hover:text-white mr-4 py-0.5 px-4" id="7">7</button>
+                    <button className="rounded-md bg-white hover:bg-yellow-50 text-black hover:text-white py-0.5 px-4" id="27">27</button>
                 </div>
             </div>
         </div>
