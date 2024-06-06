@@ -4,7 +4,7 @@ export default function Footer() {
             <hr />
             <div className="grid grid-cols-2 gap-4 mt-4">
                 <div>
-                    <p>Le projet a été réalisé dans le cadre du Datajournalisme Climate Challenge organise par Ouest Médialab les 30 et 31 mai 2024 à Paris.</p>
+                    <p>Le projet a été réalisé dans le cadre du Datajournalisme Climate Challenge organisé par Ouest Médialab les 30 et 31 mai 2024 à Paris.</p>
                 </div>
                 <div>
                     <p>L&apos;équipe projet :</p>
