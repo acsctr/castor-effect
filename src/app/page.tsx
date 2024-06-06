@@ -33,17 +33,17 @@ export default function Home() {
         <h2>C&apos;est quoi, un castor ?</h2>
       </div>
       <Castorclic />
-      <div className="pl-36 pr-4 sm:pl-56 md:pl-72 lg:pl-80 xl:pl-96 2xl:pl-96">
+      <div className="pl-28 pr-4 sm:pl-56 md:pl-72 lg:pl-80 xl:pl-96 2xl:pl-96">
         <h2>Les mensurations du castor</h2>
       </div>
       <Chat />
-      <div className="pl-36 pr-4 sm:pl-56 md:pl-72 lg:pl-80 xl:pl-96 2xl:pl-96">
+      <div className="pl-28 pr-4 sm:pl-56 md:pl-72 lg:pl-80 xl:pl-96 2xl:pl-96">
         <h2>Une espèce en pleine expansion</h2>
         <Expansion />
         <h2>Les éléments d&apos;un barrage</h2>
       </div>
       <Barrages />
-      <div className="pl-36 pr-4 sm:pl-56 md:pl-72 lg:pl-80 xl:pl-96 2xl:pl-96">
+      <div className="pl-28 pr-4 sm:pl-56 md:pl-72 lg:pl-80 xl:pl-96 2xl:pl-96">
         <h2>Le castor et les zones humides</h2>
         <Zoneshumides />
         <h2>Le mal-aimé des agriculteurs ?</h2>
