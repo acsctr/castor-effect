@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="footer text-xs mt-20 p-3 text-center">
+        <div className="footer text-xs mt-20 p-3 text-center bg-green-500/90">
             <hr />
             <p className="mt-2">L&apos;équipe projet :</p>
             <p>Sarah BINET, Aurélie CONSTANT, Julien DEPELCHIN, Marie JAMET et Jeanne SCHELLE.</p>

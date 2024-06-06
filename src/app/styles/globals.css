@@ -23,21 +23,6 @@ h2 {
   margin-top: 3%;
 }
 
-.castorclic {
-  background-color: rgb(7 99 81 / 90%);
-}
-
-.game button {
-  background-color: white;
-  color: #076351;
-  padding: 2px 15px 2px 15px;
-  margin-right: 20px;
-}
-
-.footer, .chat, .barrages {
-  background-color: rgb(7 99 81 / 90%);
-}
-
 .resp-img {
   position: relative!important;
   max-width:800px;
