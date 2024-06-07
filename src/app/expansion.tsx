@@ -8,7 +8,8 @@ export default function Expansion() {
             <h2>La réintroduction des castors, un succès</h2>
             <p>Plusieurs opérations de réintroduction des castors ont été menées en France à partir de 1957. Le nombre de castors réintroduits variait de 3 à 21. La plupart des réintroductions se sont conclues par un succès.</p>
             <Reintroduction />
-            <p className="text-xs mt-1 mb-5">Source : Faune sauvage n<sup>o</sup> 297 - 4<sup>e</sup> trimestre 2012</p>
+            
+            <p className="text-xs text-center mt-5 mb-5">Source : Faune sauvage n<sup>o</sup> 297 - 4<sup>e</sup> trimestre 2012</p>
             <p>En 1965, sa population était estimée à 3 000 castors, 5 000 en 1986 et 9 000 en 1997. En un siècle leur nombre a été multiplié par 150 ! Aujourd&apos;hui, il y aurait une population d&apos;au moins 20 000 individus sur plus de 18 000 km de cours d&apos;eau.</p>
             <Image
                 src="/images/reintroduction.png"
