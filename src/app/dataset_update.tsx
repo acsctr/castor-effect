@@ -10,7 +10,7 @@ console.log(url);
 export default function Datasetupdate() {
     const [data, setData] = useState(null)
     const [isLoading, setIsLoading] = useState(true)
-    const date_options:any = { year: 'numeric', month: 'long', day: 'numeric'};
+    const date_options: any = { year: 'numeric', month: 'long', day: 'numeric' };
 
     useEffect(() => {
         fetch(url)
@@ -26,10 +26,8 @@ export default function Datasetupdate() {
     if (!data) return <p>Date de mise à jour inconnue</p>
 
     return (
-        <div>
-            <p className = "text-xs text-center">
+        <p className="text-xs text-center">
             Date de dernière mise à jour des données sur opendatasoft : {data}
-            </p>
-        </div>
+        </p>
     )
 }

@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip, Sector } from 'recharts';
-import Datasetupdate from './dataset_update';
 
 const COLORS = ['#17e2a3', '#9abef4', '#c4a672'];
 const RADIAN = Math.PI / 180;
@@ -105,7 +104,6 @@ export default function Reintroduction() {
           <Tooltip />
         </PieChart>
       </ResponsiveContainer>
-      <Datasetupdate />
     </div>
   )
 }
