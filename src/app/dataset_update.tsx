@@ -3,9 +3,6 @@
 import { useState, useEffect, useCallback } from 'react'
 
 let url = process.env.NEXT_PUBLIC_ODS_BASE_URL + "catalog/datasets/resultat_reintroductions_castors?select=modified&timezone=UTC&include_links=false&include_app_metas=false&apikey=" + process.env.NEXT_PUBLIC_ODS_API_KEY;
-console.log(url);
-
-
 
 export default function Datasetupdate() {
     const [data, setData] = useState(null)
