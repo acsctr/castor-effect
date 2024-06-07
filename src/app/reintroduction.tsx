@@ -45,7 +45,6 @@ const renderActiveShape = (props: { cx: any; cy: any; innerRadius: any; outerRad
 };
 
 let ods_url = process.env.NEXT_PUBLIC_ODS_BASE_URL + "catalog/datasets/resultat_reintroductions_castors/records?limit=20&apikey=" + process.env.NEXT_PUBLIC_ODS_API_KEY;
-console.log(ods_url);
 
 export default function Reintroduction() {
   const [data, setData] = useState(null)
@@ -65,7 +64,6 @@ export default function Reintroduction() {
     fetch(ods_url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
         setData(data.results)
         setIsLoading(false)
       })
