@@ -52,7 +52,7 @@ export default function Reintroduction() {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const onPieEnter = useCallback(
-    (_, index) => {
+    (_:any, index:any) => {
       setActiveIndex(index);
     },
     [setActiveIndex]
