@@ -47,7 +47,7 @@ const renderActiveShape = (props: { cx?: any; cy?: any; innerRadius?: any; outer
 let ods_url = process.env.NEXT_PUBLIC_ODS_BASE_URL + "catalog/datasets/resultat_reintroductions_castors/records?limit=20&apikey=" + process.env.NEXT_PUBLIC_ODS_API_KEY;
 
 export default function Reintroduction() {
-  const [data, setData] = useState(null)
+  const [data, setData] = useState<any>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -96,7 +96,7 @@ export default function Reintroduction() {
           <Legend
             verticalAlign="bottom"
             layout="horizontal"
-            iconSize="22"
+            iconSize ={22}
             iconType="triangle"
           />
           <Tooltip />
