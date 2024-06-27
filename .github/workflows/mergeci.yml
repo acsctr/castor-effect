@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Crée merge request
-        uses: actions/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v6
         with:
           title: "Mise à jour de ci ${{ github.event.commits[0].message }}"
           body: "Cette merge request a été créée automatiquement à la suite d'un commit sur la branche ci."
