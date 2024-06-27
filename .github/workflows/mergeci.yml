@@ -1,0 +1,29 @@
+# .github/workflows/mergedevelop.yml
+
+name: Merge ci
+
+on:
+ push:
+  branches:
+    - ci
+
+jobs:
+  merge_develop:
+    name: Merge request si commit sur ci
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupère le code
+        uses: actions/checkout@v3
+
+      - name: Installe dépendances
+        run: npm install
+
+      - name: Crée merge request
+        uses: actions/create-pull-request@v3
+        with:
+          title: "Mise à jour de ci ${{ github.event.commits[0].message }}"
+          body: "Cette merge request a été créée automatiquement à la suite d'un commit sur la branche ci."
+          branch: ci
+          target: develop
+
+
