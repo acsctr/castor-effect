@@ -1,6 +1,6 @@
 # .github/workflows/mergedevelop.yml
 
-name: Merge ci
+name: Merge ci - v2
 
 on:
  push:
