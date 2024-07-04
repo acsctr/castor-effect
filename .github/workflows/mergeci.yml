@@ -24,6 +24,6 @@ jobs:
           title: "Mise à jour de ci ${{ github.event.commits[0].message }}"
           body: "Cette merge request a été créée automatiquement à la suite d'un commit sur la branche ci."
           branch: ci
-          target: develop
+          base: develop
 
 
