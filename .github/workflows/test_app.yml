@@ -15,4 +15,4 @@ jobs:
         with:
           build: npm run build
           start: npm start
-          config: baseURL=${{secrets.TEST_BASE_URL}}
+          config: baseUrl=${{secrets.TEST_BASE_URL}}
