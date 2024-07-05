@@ -5,6 +5,6 @@ describe('The Home Page', () => {
             // failing the test
             return false
         });
-        cy.visit('${TEST_BASE_URL}')
+        cy.visit('/')
     })
 })
