@@ -1,15 +1,21 @@
-name: Create a pull request on each commit
+name: Run test and create a pull request for the features
 on:
   push:
     branches-ignore: [master,develop]
 jobs:
-  action-pull-request:
+  test-pull-request:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
+          config: baseUrl=${{secrets.TEST_BASE_URL}}
       - name: Create pull request
         uses: devops-infra/action-pull-request@v0.5.5
         with:
