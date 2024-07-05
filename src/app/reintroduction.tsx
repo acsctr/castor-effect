@@ -44,8 +44,6 @@ const renderActiveShape = (props: { cx?: any; cy?: any; innerRadius?: any; outer
   );
 };
 
-let ods_url = process.env.NEXT_PUBLIC_ODS_BASE_URL + "catalog/datasets/resultat_reintroductions_castors/records?limit=20&apikey=" + process.env.NEXT_PUBLIC_ODS_API_KEY;
-
 export default function Reintroduction() {
   const [data, setData] = useState<any>(null)
   const [isLoading, setIsLoading] = useState(true)
@@ -58,16 +56,18 @@ export default function Reintroduction() {
     [setActiveIndex]
   );
 
-
+let donnees = [
+  { resultat_de_la_reintroduction: 'Succès', nombre_de_castors: 241 },
+  { resultat_de_la_reintroduction: 'Échec', nombre_de_castors: 28 },
+  { resultat_de_la_reintroduction: 'Résultat inconnu', nombre_de_castors: 7 },
+]
 
   useEffect(() => {
-    fetch(ods_url)
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data.results)
+    
+        setData(donnees)
         setIsLoading(false)
-      })
-  }, [])
+
+  }, []);
 
   if (isLoading) return <p>Loading...</p>
   if (!data) return <p>No profile data</p>
